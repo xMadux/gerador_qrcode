@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.containerActive{
+    transition: height 0.5s ease;
+}
+
+
+#img-QRCode{
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.qr-code{
+    width: 230px;
+    height: 230px;
+    opacity: 0;
+}
+
+#campo-QRCode{
+    width: 300px;
+    height: 40px;
+    padding-left: 0.5rem;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #b7baaf;
+    
+}
+
+.bordinha{
+    border: 1px solid #9FACE6;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.4rem 0;
+}
+
+.QRcode{
+   display: none;
+}
+
+h2{
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.gerar-QRCode{
+   min-width: 130px;
+   height: 35px;
+   border-radius: 5px;
+   background-color: #8BC6EC;
+   border: none;
+   color: white;
+   font-weight: 400;
+   transition: all 0.4s ease;
+   cursor: pointer;
+   margin-top: 1rem;
+}
+
+.gerar-QRCode:hover{
+    background-color: #9599E2;
+    transition: all 0.5s ease-in;
+}
